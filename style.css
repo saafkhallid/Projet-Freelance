@@ -1,0 +1,109 @@
+* {
+  font-family: fantasy;
+}
+body {
+  background-color: rgb(222, 217, 217);
+}
+.carousel-item {
+  height: 100vh;
+  min-width: 300px;
+}
+.carousel-caption {
+  bottom: 200px;
+  z-index: 2;
+}
+.carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+.carousel-caption p {
+  width: 60%;
+  letter-spacing: 2px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+.carousel-inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.navbar-light .navbar-brand {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+  color: rgb(15, 14, 14);
+}
+.w-100 {
+  height: 100vh;
+}
+
+.section-padding {
+  padding: 100px;
+}
+
+.service .card-body {
+  font-size: 30px;
+}
+.portfolio .card-body {
+  -webkit-box-shadow: 1px 5px 15px 5px #000000;
+  box-shadow: 1px 5px 15px 5px #000000;
+}
+.team .card-body {
+  cursor: pointer;
+}
+
+/* //responsive */
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .carousel-caption {
+    bottom: 600px;
+  }
+  .carousel-caption p {
+    width: 100%;
+  }
+  .card {
+    margin-bottom: 60px;
+  }
+  .img-area img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .carousel-caption {
+    bottom: 125px;
+  }
+  .carousel-caption h5 {
+    font-size: 20px;
+  }
+  .carousel-caption p {
+    font-size: 16px;
+    width: 100%;
+    line-height: 1.3;
+  }
+  .carousel-caption a {
+    padding: 10px 15px;
+  }
+  .card {
+    margin-bottom: 60px;
+  }
+  .text-About{
+    margin-top: 60px;
+  }
+}
